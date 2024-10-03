@@ -1,0 +1,24 @@
+# ----------------------------------------------------------------------- #
+#                                                                         #
+#                               YMAL文件语法                               #
+#                       http://medai.icu/thread/677                       #
+#                                                                         #
+# ----------------------------------------------------------------------- #
+# 要可视化的模型的目录位置，一般为组件下创建的models目录。
+# Onekey会尝试把下面的所有的模型都进行可视化。
+viz_model_root: C:\Users\onekey\Desktop\demo\src\models\ml
+save_dir: img
+
+###################### 指标汇总模块参数 ######################
+# 通过{model_name}_{subset}.csv的形式命名的文件
+# 对比的模型
+compare_model: [DL_LR, DLR_SVM, Rad_MLP, Rad_RandomForest, DLR_SVM]
+# 结果存放的目录
+results_dir: results
+# label文件
+label_file: C:\Users\onekey\Desktop\demo\src\split_info\label-RND-4.csv
+# label列名
+task_column: label
+sel_model: SVM
+
+DISABLE_VIDEO: True
